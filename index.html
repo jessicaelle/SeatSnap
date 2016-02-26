@@ -4,38 +4,40 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <link rel="stylesheet" href="style.css">
-  <title>Chekker Flight App</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>SeatSnap | Flight Check-Ins Made Easy</title>
   <script type="text/javascript" src="script.js" defer></script>
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 </head>
 
 <body>
   <header>
-    <h1>Seat Snap</h1>
-    <h2 class="tagline"> Airline Check-Ins Made Easy</h2>
+    <h1>SeatSnap</h1>
+    <h2 class="tagline">Flight Check-Ins Made Easy</h2>
   </header>
 
   <!-- The form below uses role="group" to get around the <fieldset>
 issues when using flexbox. Based on StackOverflow workaround:
 /why-are-not-all-flexbox-elements-behaving-like-flexbox-divs -->
-
-  <form>
-    <div role="group">
-      <legend>Start Your Checkin</legend>
-      <label for=“firstName”>First Name:</label>
+<main>
+  <div class="mainContent">
+  <form class="formContainer">
+    <div role="group" id="formLeft">
+      <legend>Start Your Check-In</legend>
+      <label for=“firstName”>First Name</label>
       <input type=“text” id=“firstName” name=“firstName”>
-      <label for=“lastName”>Last Name:</label>
+      <label for=“lastName”>Last Name</label>
       <input type=“text” id=“lastName” name=“lastName”>
-      <label for=“airline”>Airline:</label>
+      <label for=“airline”>Airline</label>
       <select id=“airline” name=“airline”>
         <option value=“southwestAirlines”>Southwest Airlines</option>
         <option value=“virginAmerica”>Virgin America</option>
       </select>
     </div>
 
-    <div role="group">
+    <div role="group" id="formMiddle">
       <label for="departureDate">Departure Date</label>
       <input type="date" />
       <label for="flightNumber">Flight #</label>
@@ -44,7 +46,7 @@ issues when using flexbox. Based on StackOverflow workaround:
       <input type="text" id="confirmationNumber" name="confirmationNumber">
     </div>
 
-    <div role="group" class="remindSchedule">
+    <div role="group" class="remindSchedule" id="formRight">
       <button onclick="document.getElementById('remindForm').removeAttribute('hidden');" id="remindButton" type="button">Remind Me</button>
       <button onclick="document.getElementById('scheduleForm').removeAttribute('hidden');" id="scheduleButton" type="button">Schedule and Pay</button>
     </div>
@@ -68,15 +70,17 @@ issues when using flexbox. Based on StackOverflow workaround:
       <button type="submit" name="submit" value="scheduler">Checkout</button>
     </div>
 
-  </form>
+    </form>
 
 
   <div>
     <a href="#">How it works</a>
   </div>
+</div>
+</main>
 
   <footer>
-    <div class="foot-logo"><a href="#">LOGO</a></div>
+    <div class="foot-logo"><a href="#">SeatSnap</a></div>
     <div><a href="#">About</a></div>
     <div><a href="#">FAQ</a></div>
     <div><a href="#">Contact</a></div>

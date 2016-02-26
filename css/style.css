@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+
+/*************************
+COLOR PALETTE
+http://www.materialpalette.com/blue/amber
+
+Primary Blue: #2196F3
+Primary Dark Blue: #1976D2
+Accent Amber: #FFC107
+Primary Text: #212121
+Secondary Text: #727272
+Light Primary Blue: #BBDEFB
+Text/Icons: #FFFFFF
+Divider Color: #B6B6B6
+
+******************************/
+/*************************
+  SITEWIDE LAYOUT STYLES
+**************************/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-flow: column;
+  font-family: 'Questrial', Helvetica, Arial;
+  color: black;
+}
+
+main {
+  flex: 1;
+  background: url('../images/clouds-bg.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mainContent {
+  background-color: #FFF;
+  max-width: 80%;
+  align-self: center;
+  border-radius: 5px;
+}
+
+
+
+header {
+  background-color: #2196F3;
+  height: 150px;
+}
+
+header h1 {
+  font-family: 'Oswald', Helvetica, Arial;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 50px;
+  background: #1976D2;
+}
+
+footer div {
+  padding: 10px;
+  margin: 5px;
+  color: #FFF;
+}
+
+.foot-logo {
+  font-family: 'Oswald', Helvetica, Arial;
+  font-weight: 400;
+  margin-right: auto;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.foot-logo a {
+  color: #FFF
+}
+
+/**** ALL FORMS *****/
+
+legend {
+  font-size: 1rem;
+  color: #FFF;
+}
+
+label {
+  font-size: .8rem;
+  color: #727272;
+}
+
+input {
+  display: block;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/******************************
+  HOMEPAGE FEATURES
+*******************************/
+
+.tagline {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/****** HOMEPAGE FORM ******/
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formLeft {
+  -webkit-flex: 2;
+  -webkit-order: 2;
+   padding: 0 10px 0px;
+  margin: 0px 10px 0px;
+}
+
+#formMiddle {
+  -webkit-flex: 2;
+  -webkit-order: 3;
+  padding: 0 10px 0px;
+  margin: 50px 10px 0px;
+}
+
+#formRight {
+  -webkit-flex: 1;
+  -webkit-order: 4;
+  padding: 0 10px 0px;
+  margin: 0px 10px 0px;
+}
+
+select {
+  display: block;
+}
+
+button {
+  padding: 10px;
+  margin: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#remindButton {
+  background-color: #1976D2;
+  color: #FFFFFF;
+}
+
+#scheduleButton {
+  background-color: #FFC107;
+  color: #FFFFFF;
+}
