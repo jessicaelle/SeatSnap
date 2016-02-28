@@ -1,5 +1,5 @@
 # SeatSnap v0.1
-SeatSnap is an app for reminding and scheduling flight check-ins. This is my final project for [Code Louisville's](https://github.com/CodeLouisville) January 2016 Front-End Development program. 
+SeatSnap is an app for reminding and scheduling flight check-ins. This is my final project for [Code Louisville's](https://github.com/CodeLouisville) January 2016 Front-End Development program. [View this project live] (http://seatsnap.netlify.com/)!
 
 ## Overview
 SeatSnap is a convenience app with two core features:
