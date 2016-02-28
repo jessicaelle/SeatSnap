@@ -22,7 +22,7 @@ Divider Color: #B6B6B6
 body {
   display: flex;
   min-height: 100vh;
-  flex-flow: column;
+  flex-flow: column nowrap;
   font-family: 'Questrial', Helvetica, Arial;
   color: black;
 }
@@ -34,13 +34,16 @@ main {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainContent {
   background-color: #FFF;
   max-width: 80%;
-  align-self: center;
   border-radius: 5px;
+  padding: 4%;
 }
 
 
@@ -92,8 +95,9 @@ footer div {
 /**** ALL FORMS *****/
 
 legend {
-  font-size: 1rem;
-  color: #FFF;
+  font-size: 1.75em;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 label {
