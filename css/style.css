@@ -137,7 +137,7 @@ input {
 #formLeft {
   -webkit-flex: 2;
   -webkit-order: 2;
-   padding: 0 10px 0px;
+  padding: 0 10px 0px;
   margin: 0px 10px 0px;
 }
 
