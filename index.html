@@ -5,9 +5,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-new.css">
   <title>SeatSnap | Flight Check-Ins Made Easy</title>
-  <script type="text/javascript" src="script.js" defer></script>
+  <script type="text/javascript" src="js/script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
   <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 </head>
@@ -22,7 +23,7 @@
 issues when using flexbox. Based on StackOverflow workaround:
 /why-are-not-all-flexbox-elements-behaving-like-flexbox-divs -->
   <main>
-    <div class="mainContent">
+    <div ng-app id="ng-app" class="mainContent">
       <form class="formContainer">
         <div role="group" id="formLeft">
           <legend>Start Your Check-In</legend>
@@ -46,14 +47,37 @@ issues when using flexbox. Based on StackOverflow workaround:
           <input type="text" id="confirmationNumber" name="confirmationNumber">
         </div>
 
-        <div role="group" class="remindSchedule" id="formRight">
+        <!-- <div role="group" class="remindSchedule" id="formRight">
           <button onclick="document.getElementById('remindForm').removeAttribute('hidden');" id="remindButton" type="button">Remind Me</button>
           <button onclick="document.getElementById('scheduleForm').removeAttribute('hidden');" id="scheduleButton" type="button">Schedule and Pay</button>
+        </div> -->
+
+        <div role="group" class="remindSchedule" id="formRight">
+          <button id="remindButton" type="button" ng-model="hiddenRemind" ng-click="hiddenRemind=!hiddenRemind">Remind Me</button>
+          <button id="scheduleButton" type="button" ng-model="hiddenSchedule" ng-click="hiddenSchedule=!hiddenSchedule">Schedule and Pay</button>
         </div>
 
-        <div role="group" id="remindForm" hidden>
+
+        <div role="group" id="remindForm" ng-show="hiddenRemind" >
+          <p>We'll remind you 24 hours before you're supposed to check-in. How would you like to be reminded? Enter your info on one or both!</p>
+            <label for=“remindEmail”>Email Address:</label>
+            <input type=“email” id=“remindEmail” name=“remindEmail”>
+            <label for="remindSMS">Mobile Phone:
+          <input type="tel" id="remindSMS" name="remindSMS">
+          <button type="submit" name="submit" value="reminder">Submit</button>
+          <p>Want to us to check-in for you instead?</p>
+    </div>
+
+    <div role="group" id="scheduleForm" ng-show="hiddenSchedule" >
+      <p>Finally, a snooze-friendly solution to flight check-ins. Five dollars gets you a worry-free check-in experience.</p>
+      <label for=“scheduleEmail”>Email Address:</label>
+            <input type=“email” id=“scheduleEmail” name=“scheduleEmail”>
+
+            <button type="submit" name="submit" value="scheduler">Checkout</button>
+        </div>
+
+        <!-- <div role="group" id="remindForm" hidden>
           <legend class="formDescription">We'll remind you 24 hours before you're supposed to check-in. How would you like to be reminded? Enter your info on one or both!
-            <!-- potentially add on/off switches so users can visually turn something on -->
             <label for=“remindEmail”>Email Address:</label>
             <input type=“email” id=“remindEmail” name=“remindEmail”>
             <label for="remindSMS">Mobile Phone:
@@ -68,7 +92,7 @@ issues when using flexbox. Based on StackOverflow workaround:
             <input type=“email” id=“scheduleEmail” name=“scheduleEmail”>
 
             <button type="submit" name="submit" value="scheduler">Checkout</button>
-        </div>
+        </div> -->
 
       </form>
       <div>
