@@ -15,9 +15,8 @@ Text/Icons: #FFFFFF
 Divider Color: #B6B6B6
 
 ******************************/
-/*************************
-  SITEWIDE LAYOUT STYLES
-**************************/
+
+/****** SITEWIDE STYLES ******/
 
 body {
   display: flex;

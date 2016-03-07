@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+
+/*************************
+COLOR PALETTE
+http://www.materialpalette.com/blue/amber
+
+Primary Blue: #2196F3
+Primary Dark Blue: #1976D2
+Accent Amber: #FFC107
+Primary Text: #212121
+Secondary Text: #727272
+Light Primary Blue: #BBDEFB
+Text/Icons: #FFFFFF
+Divider Color: #B6B6B6
+
+******************************/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Questrial', Helvetica, Arial;
+  color: black;
+}
+
+header {
+  background-color: #2196F3;
+  height: 150px;
+}
+
+header h1 {
+  font-family: 'Oswald', Helvetica, Arial;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+.tagline {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+}
+
+main {
+  flex: 1;
+  background: url('../images/clouds-bg.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  background-color: #FFF;
+  max-width: 80%;
+  border-radius: 5px;
+}
+
+.formContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+legend {
+  font-size: 1.75em;
+  color: #000;
+  margin-bottom: 10px;
+  position: fixed;
+}
+
+label {
+  font-size: .8rem;
+  color: #727272;
+}
+
+input {
+  display: block;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+button {
+  padding: 10px;
+  margin: 15px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#remindButton {
+  background-color: #1976D2;
+  color: #FFFFFF;
+}
+
+#scheduleButton {
+  background-color: #FFC107;
+  color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 50px;
+  background: #1976D2;
+}
+
+footer div {
+  padding: 10px;
+  margin: 5px;
+  color: #FFF;
+}
+
+.foot-logo {
+  font-family: 'Oswald', Helvetica, Arial;
+  font-weight: 400;
+  margin-right: auto;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.foot-logo a {
+  color: #FFF
+}
