@@ -54,15 +54,25 @@ header {
   height: 150px;
 }
 
-header h1 {
-  font-family: 'Oswald', Helvetica, Arial;
+h1 {
+
+
+}
+
+h2 {
+
+}
+
+
+.siteName {
+  font-family: 'Questrial', Helvetica, Arial;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
   font-size: 3.5rem;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 footer {
@@ -129,6 +139,12 @@ input {
 }
 
 /****** HOMEPAGE FORM ******/
+
+.mainContent h2 {
+  margin-bottom: 0;
+
+}
+
 .formContainer {
   display: flex;
   align-items: center;
@@ -136,24 +152,25 @@ input {
 }
 
 #formLeft {
-  -webkit-flex: 2;
-  -webkit-order: 2;
+  flex: 2;
+  order: 2;
   padding: 0 10px 0px;
   margin: 0px 10px 0px;
 }
 
 #formMiddle {
-  -webkit-flex: 2;
-  -webkit-order: 3;
+  flex: 2;
+  order: 3;
   padding: 0 10px 0px;
   margin: 50px 10px 0px;
 }
 
 #formRight {
-  -webkit-flex: 1;
-  -webkit-order: 4;
+  flex: 1;
+  order: 4;
   padding: 0 10px 0px;
   margin: 0px 10px 0px;
+  text-align: center;
 }
 
 select {
@@ -161,6 +178,7 @@ select {
 }
 
 button {
+  width: 100%;
   padding: 10px;
   margin: 15px;
   border: 0px;
@@ -187,36 +205,51 @@ button {
 
 /*********RESPONSIVE************/
 
-/*****MOBILE*****/
-@media screen and (min-width:600px) {
-  .formContainer {
-    flex-flow: column;
-  }
+/* Large Devices, Wide Screens */
+   @media only screen and (max-width : 1200px) {
 
-  .mainContent {
-  align-self: stretch;
-  }
+   }
 
-}
+   /* Medium Devices, Desktops */
+   @media only screen and (max-width : 992px) {
 
-/*****TABLET****/
-@media screen and (min-width:860px) {
+   }
 
-  .formContainer {
-    flex-flow: column;
-  }
+   /* Small Devices, Tablets */
+   @media only screen and (max-width : 768px) {
 
-  .mainContent {
-  align-self: stretch;
-  }
+     .mainContent h2 {
+       text-align: center;
+       margin-bottom: 20px;
+     }
 
-}
+     .formContainer {
+       flex-flow: column nowrap;
+     }
 
-/*****DESKTOP****/
-@media screen and (min-width:1200px) {
+     .mainContent {
+     align-self: baseline;
+     padding: 4%;
+     margin: 8%;
+     }
 
-  .formContainer {
-    flex-flow: row;
-  }
+   }
 
-}
+   /* Extra Small Devices, Phones */
+   @media only screen and (max-width : 480px) {
+
+     .mainContent {
+     margin: 10%;
+     }
+
+     .mainContent h2 {
+       text-align: center;
+       margin-bottom: 30px;
+     }
+
+   }
+
+   /* Custom, iPhone Retina */
+   @media only screen and (max-width : 320px) {
+
+   }
