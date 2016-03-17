@@ -43,7 +43,8 @@ main {
   background-color: #FFF;
   max-width: 80%;
   border-radius: 5px;
-  padding: 4%;
+  padding: 2%;
+  margin: 3%;
 }
 
 
@@ -174,4 +175,48 @@ button {
 #scheduleButton {
   background-color: #FFC107;
   color: #FFFFFF;
+}
+
+#howItWorks {
+  font-size: small;
+  padding: 10px;
+  margin: 15px 5px 0 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/*********RESPONSIVE************/
+
+/*****MOBILE*****/
+@media screen and (min-width:600px) {
+  .formContainer {
+    flex-flow: column;
+  }
+
+  .mainContent {
+  align-self: stretch;
+  }
+
+}
+
+/*****TABLET****/
+@media screen and (min-width:860px) {
+
+  .formContainer {
+    flex-flow: column;
+  }
+
+  .mainContent {
+  align-self: stretch;
+  }
+
+}
+
+/*****DESKTOP****/
+@media screen and (min-width:1200px) {
+
+  .formContainer {
+    flex-flow: row;
+  }
+
 }
