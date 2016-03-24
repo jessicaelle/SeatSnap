@@ -79,7 +79,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  min-height: 50px;
+  height: 50px;
   background: #1976D2;
 }
 
@@ -224,7 +224,7 @@ button {
      }
 
      .formContainer {
-       flex-flow: column nowrap;
+       flex-flow: column;
      }
 
      .mainContent {
