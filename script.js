@@ -7,10 +7,9 @@
 // });
 
 //ANGULAR//
-var seatsnAPP = angular.module('seatsnAPP', ['ngRoute']);
+var myApp = angular.module('myApp', []);
 
-
-seatsnAPP.controller('mainController', function($scope) {
+myApp.controller('mainController', function($scope) {
   $scope.message = 'Testing hereeee';
     });
 
