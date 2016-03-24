@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="seatsnAPP">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
@@ -21,16 +21,8 @@
 issues when using flexbox. Based on StackOverflow workaround:
 /why-are-not-all-flexbox-elements-behaving-like-flexbox-divs -->
   <main>
-    <div class="mainContent">
-      <div id="main">
-        {{ message }}
-      </div>
-      <h2>Start Your Check-In</h2>
-      <p>SeatSnap makes it easy to check-in to your flight. Choose <strong>Remind
-        Me</strong> to set up an SMS or email alert, triggered one hour before you're able to check-in. Alternatively, take the hassle out of the process by having SeatSnap check-in for you for $5. Choose the <strong>Schedule Me</strong> to get started!</p>
-      <button id="remindButton">Remind Me</button>
-      <button id="scheduleButton">Schedule Me</button>
-      <a href="#" id="howItWorks">How it works</a>
+    <div id="main" class="mainContent">
+      <div ng-view></div>
     </div>
   </main>
 

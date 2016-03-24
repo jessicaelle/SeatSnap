@@ -1,4 +1,3 @@
-<script>
 // ///HOW IT WORKS HIDER////
 // $(document).ready(function () {
 //     setTimeout(function(){
@@ -7,11 +6,44 @@
 // });
 
 //ANGULAR//
-var myApp = angular.module('myApp', []);
+var seatsnAPP = angular.module('seatsnAPP', ['ngRoute']);
 
-myApp.controller('mainController', function($scope) {
-  $scope.message = 'Testing hereeee';
+// route config
+seatsnAPP.config(function($routeProvider) {
+  $routeProvider
+      //for homepage
+      .when('/', {
+          templateUrl : 'pages/home.html',
+          controller : 'mainController'
+      })
+
+      //for about
+      .when('/about', {
+          templateUrl : 'pages/about.html',
+          controller : 'aboutController'
+      })
+
+      //for contact
+      .when('/contact', {
+          templateUrl : 'pages/contact.html'
+          controller : 'contactController'
+      })
+
+})
+
+
+seatsnAPP.controller('mainController', function($scope) {
+  $scope.message = 'Homepage test';
     });
+
+seatsnAPP.controller('aboutController', function($scope) {
+  $scope.message = 'About page test';
+    });
+
+seatsnAPP.controller('contactController', function($scope) {
+  $scope.message = 'Contact page test';
+    });
+
 
 
 
