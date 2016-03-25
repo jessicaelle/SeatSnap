@@ -30,15 +30,17 @@ p
 {
     font-size: .9em;
     line-height: 1.4;
-    margin: 1% 0 2% 0;
+    margin: 1% 0 3% 0;
     color: #212121;
 }
 
-h2, h3, legend {
-  font-family: 'Oswald', Helvetica, Arial;
+h2 {
+  font-size: 1.25em;
+
 }
 
 h3, legend {
+    font-family: 'Oswald', Helvetica, Arial;
     font-size: 1em;
     margin-bottom: 10px;
     color: #1976D2;
@@ -97,23 +99,18 @@ header a
     font-family: 'Oswald', Helvetica, Arial;
     font-size: 3.5em;
     font-weight: 400;
-
     margin: 15px 0 5px 0;
-
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-
     color: #fff;
 }
 
 .tagline
 {
     font-size: 1em;
-
     text-align: center;
     text-transform: uppercase;
-
     color: white;
 }
 
@@ -121,11 +118,8 @@ footer
 {
     display: flex;
     flex-direction: row;
-
     height: 50px;
-
     background: #1976d2;
-
     justify-content: center;
 }
 
@@ -139,7 +133,6 @@ footer a:link,
 a:visited
 {
     text-decoration: none;
-
     color: #fff;
 }
 
@@ -161,7 +154,6 @@ footer a:active
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-
     color: #fff;
 }
 
@@ -175,9 +167,34 @@ button
     width: 100%;
     margin: 1% 2%;
     padding: 3%;
-
     border: 0;
     border-radius: 5px;
+}
+
+.remindButton
+{
+    width: 95%;
+    color: #fff;
+    background-color: #1976d2;
+}
+
+.scheduleButton
+{
+    width: 95%;
+    color: #fff;
+    background-color: #ffc107;
+}
+
+#howItWorks
+{
+    font-family: 'Oswald', Helvetica, Arial;
+    font-size: small;
+    font-weight: 400;
+    float: right;
+    margin: 2% 0 0 0;
+    padding: 1% 0 0 1%;
+    text-transform: uppercase;
+    color: #000;
 }
 
 /******************************
@@ -260,52 +277,21 @@ input[type="submit"]:hover {
 }
 
 /******************************
-  HOMEPAGE FEATURES
-*****************************/
-
-
-#remindButton
-{
-    width: 95%;
-    color: #fff;
-    background-color: #1976d2;
-}
-
-#scheduleButton
-{
-    width: 95%;
-    color: #fff;
-    background-color: #ffc107;
-}
-
-#howItWorks
-{
-    font-family: 'Oswald', Helvetica, Arial;
-    font-size: small;
-    font-weight: 400;
-
-    float: right;
-
-    margin: 2% 0 0 0;
-    padding: 1% 0 0 1%;
-
-    text-transform: uppercase;
-
-    color: #000;
-}
-
-/******************************
   RESPONSIVE
 *****************************/
 @media screen and (min-width: 320px) {
 
-body {
+p, h2, h3, button {
   font-size: 2em;
   font-family: Helvetica, Arial;
 }
 
+#howItWorks {
+  font-size: 1.5em;
+}
+
 header {
-  height: 200px;
+  height: 220px;
 }
 
 footer {
@@ -316,30 +302,27 @@ footer {
   margin: 25px 0;
   }
 
-  .tagline {
-    display: none;
-  }
 }
 
 #howItWorks {
   font-size: .7em;
 }
 
-@media screen and (min-width: 480px) {
-
-
-}
-
-@media screen and (min-width: 768px){
-
-  body {
-    font-size: 1.5em;
-    font-family: Helvetica, Arial;
-  }
-
-}
 
 @media screen and (min-width: 992px){
+
+  p, h3, button {
+    font-size: 1em;
+    font-family: 'Questrial', Helvetica, Arial;
+  }
+
+h2 {
+  font-size: 1.25em;
+}
+
+  #homeRemind, #homeSchedule {
+    width: 40%;
+  }
 
 
 }
