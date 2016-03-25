@@ -17,142 +17,246 @@ Divider Color: #B6B6B6*/
   SITEWIDE
 *****************************/
 
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-flow: column nowrap;
-  font-family: 'Questrial', Helvetica, Arial;
-  color: #212121;
+body
+{
+    font-family: 'Questrial', Helvetica, Arial;
+    display: flex;
+    min-height: 100vh;
+    color: #212121;
+    flex-flow: column nowrap;
 }
 
-p {
-  color: #212121;
-  line-height: 1.4;
-  margin: 1% 0 2% 0;
-  font-size: .9em;
+p
+{
+    font-size: .9em;
+    line-height: 1.4;
+    margin: 1% 0 2% 0;
+    color: #212121;
 }
 
-strong {
-  color: tomato;
+h2, h3, legend {
+  font-family: 'Oswald', Helvetica, Arial;
 }
 
-main {
-  flex: 1;
-  background: url('../images/clouds-bg.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h3, legend {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #1976D2;
+    text-transform: uppercase;
 }
 
-.mainContent {
+strong
+{
+    color: tomato;
+}
+
+main
+{
+    display: flex;
+
+    background: url('../images/clouds-bg.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent
+{
+    display: flex;
+    width: 80%;
+    margin: 8% 15%;
+    padding: 4.5%;
+    border-radius: 5px;
+    background-color: #fff;
+    flex-flow: column;
+    align-self: baseline;
+}
+
+header
+{
+    height: 160px;
+    background-color: #2196f3;
+}
+
+header a
+{
+    text-decoration: none;
+}
+
+.mobilenav {
+  display: inline-block;
+}
+
+.siteName
+{
+    font-family: 'Oswald', Helvetica, Arial;
+    font-size: 3.5em;
+    font-weight: 400;
+
+    margin: 15px 0 5px 0;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.tagline
+{
+    font-size: 1em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+
+    height: 50px;
+
+    background: #1976d2;
+
+    justify-content: center;
+}
+
+footer div
+{
+    margin: 0;
+    padding: 10px;
+}
+
+footer a:link,
+a:visited
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+
+footer a:hover
+{
+    color: #ffc107;
+}
+
+footer a:active
+{
+    color: #212121;
+}
+
+.foot-logo
+{
+    font-family: 'Oswald', Helvetica, Arial;
+    font-weight: 400;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.foot-logo a
+{
+    color: #fff;
+}
+
+button
+{
+    width: 100%;
+    margin: 1% 2%;
+    padding: 3%;
+
+    border: 0;
+    border-radius: 5px;
+}
+
+/******************************
+  FORMS
+*****************************/
+
+legend
+{
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #1976D2;
+    text-transform: uppercase;
+}
+
+label
+{
+    font-size: .8rem;
+    color: #727272;
+}
+
+input, textarea {
+    display: block;
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    color: #727272;
+    font-size: 1em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    line-height: 2em;
+}
+
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-size: 12px;
+    height: 50px;
+    width: 100%;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: #fff;
+    border: 2px solid #b43838;
+    background: #dd4545;
+}
+
+input[type="submit"]:hover {
+  color:#FFF;
+	border:2px solid #dd4545;
+	background: #b43838;
+	cursor:pointer;
+}
+
+#contactForm textarea {
+  height:150px;
+}
+
+#scheduleForm, #remindForm {
   display: flex;
   flex-flow: column;
-  align-self: baseline;
-  background-color: #FFF;
-  max-width: 80%;
-  border-radius: 5px;
-  padding: 3%;
-  margin: 8% 2%;
 }
 
-header {
-  background-color: #2196F3;
-  height: 160px;
-}
-
-header a {
-  text-decoration: none;
-}
-
-.siteName {
-  font-family: 'Oswald', Helvetica, Arial;
-  font-weight: 400;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 3.5em;
-  margin: 15px 0 5px 0;
-}
-
-.tagline {
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1em;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 50px;
-  background: #1976D2;
-}
-
-footer div {
+.essentialInfo {
+  flex: 1;
   padding: 10px;
-  margin: 0px;
 }
 
-footer a:link, a:visited {
-  text-decoration: none;
-  color: #FFF;
-}
-
-footer a:hover {
-  color: #FFC107;
-}
-
-footer a:active {
-  color:#212121;
-}
-
-.foot-logo {
-  font-family: 'Oswald', Helvetica, Arial;
-  font-weight: 400;
-  margin-right: auto;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.foot-logo a {
-  color: #FFF
-}
-
-button {
-  width: 100%;
-  padding: 3%;
-  margin: 1% 2%;
-  border: 0px;
-  border-radius: 5px;
-}
-
-/**** ALL FORMS *****/
-
-legend {
-  font-size: 1.75em;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-label {
-  font-size: .8rem;
-  color: #727272;
-}
-
-input {
-  display: block;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 10px;
+.flightInfo {
+  flex: 1;
+  padding: 10px;
 }
 
 /******************************
@@ -160,29 +264,82 @@ input {
 *****************************/
 
 
-#remindButton {
-  background-color: #1976D2;
-  color: #FFFFFF;
-  width: 97%;
+#remindButton
+{
+    width: 95%;
+    color: #fff;
+    background-color: #1976d2;
 }
 
-#scheduleButton {
-  background-color: #FFC107;
-  color: #FFFFFF;
-  width: 97%;
+#scheduleButton
+{
+    width: 95%;
+    color: #fff;
+    background-color: #ffc107;
 }
 
-#howItWorks {
-  color: #000;
-  font-family: 'Oswald', Helvetica, Arial;
-  font-weight: 400;
-  font-size: small;
-  text-transform: uppercase;
-  padding: 1% 0 0 1%;
-  margin: 2% 0 0 0;
-  float: right;
+#howItWorks
+{
+    font-family: 'Oswald', Helvetica, Arial;
+    font-size: small;
+    font-weight: 400;
+
+    float: right;
+
+    margin: 2% 0 0 0;
+    padding: 1% 0 0 1%;
+
+    text-transform: uppercase;
+
+    color: #000;
 }
 
 /******************************
   RESPONSIVE
 *****************************/
+@media screen and (min-width: 320px) {
+
+body {
+  font-size: 2em;
+  font-family: Helvetica, Arial;
+}
+
+header {
+  height: 200px;
+}
+
+footer {
+  height: 70px;
+}
+
+.siteName {
+  margin: 25px 0;
+  }
+
+  .tagline {
+    display: none;
+  }
+}
+
+#howItWorks {
+  font-size: .7em;
+}
+
+@media screen and (min-width: 480px) {
+
+
+}
+
+@media screen and (min-width: 768px){
+
+  body {
+    font-size: 1.5em;
+    font-family: Helvetica, Arial;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+
+}

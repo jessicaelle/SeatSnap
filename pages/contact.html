@@ -1,2 +1,11 @@
-<h1>Contact Page</h1>
-add contact form here
+<h1>Contact Us</h1>
+<form id="contactForm" action="https://formspree.io/contact@jessicaelle.com" method="post">
+
+<input type=“text” id=“firstName” name=“firstName” required>
+<input type=“email” id=“contactEmail” name=“contactEmail”>
+<textarea name="comments" placeholder="MESSAGE" required ></textarea>
+<input type="hidden" name="_subject" value="SeatSnap Contact Submission" />
+<input type="hidden" name="_next" value="/thanks" />
+<input type="submit" name="submit" value="Send"></input>
+
+</form>

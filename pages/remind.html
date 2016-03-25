@@ -1,9 +1,8 @@
-<h1>Check-In Reminder</h1>
 <h2>Get SMS &amp; Email Alerts</h2>
 <p>{{ message }}</p>
-<form action="https://formspree.io/remind@jessicaelle.com" method="post">
-  <fieldset>
-    <legend>The Essentials</legend>
+<form id="remindForm" action="https://formspree.io/remind@jessicaelle.com" method="post">
+  <div role="group" class="essentialInfo">
+    <legend>Essential Info</legend>
     <label for=“firstName”>First Name</label>
     <input type=“text” id=“firstName” name=“firstName”>
     <label for=“lastName”>Last Name</label>
@@ -12,8 +11,8 @@
     <input type=“email” id=“remindEmail” name=“remindEmail”>
     <label for="remindSMS">Mobile Phone:</label>
     <input type="tel" id="remindSMS" name="remindSMS">
-  </fieldset>
-  <fieldset>
+  </div>
+  <div role="group" class="flightInfo">
   <legend>Flight Info</legend>
   <label for=“airline”>Airline</label>
   <select id=“airline” name=“airline”>
@@ -28,6 +27,6 @@
   <input type="text" id="confNumber" name="confNumber">
   <input type="hidden" name="_subject" value="SeatSnap Remind Submission" />
   <input type="hidden" name="_next" value="/thanks" />
-  </fieldset>
+  </div>
   <input type="submit" name="submit" value="Send"></input>
 </form>
