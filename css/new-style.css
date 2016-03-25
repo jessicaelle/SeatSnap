@@ -1,6 +1,8 @@
-/*************************
-COLOR PALETTE
-http://www.materialpalette.com/blue/amber
+/******************************
+  COLORS
+*****************************/
+
+/*http://www.materialpalette.com/blue/amber
 
 Primary Blue: #2196F3
 Primary Dark Blue: #1976D2
@@ -9,12 +11,11 @@ Primary Text: #212121
 Secondary Text: #727272
 Light Primary Blue: #BBDEFB
 Text/Icons: #FFFFFF
-Divider Color: #B6B6B6
+Divider Color: #B6B6B6*/
 
-******************************/
-/*************************
-  SITEWIDE LAYOUT STYLES
-**************************/
+/******************************
+  SITEWIDE
+*****************************/
 
 body {
   display: flex;
@@ -60,7 +61,7 @@ main {
 
 header {
   background-color: #2196F3;
-  height: 250px;
+  height: 160px;
 }
 
 header a {
@@ -74,7 +75,7 @@ header a {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 6em;
+  font-size: 3.5em;
   margin: 15px 0 5px 0;
 }
 
@@ -82,7 +83,7 @@ header a {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 footer {
@@ -96,11 +97,19 @@ footer {
 footer div {
   padding: 10px;
   margin: 0px;
+}
+
+footer a:link, a:visited {
+  text-decoration: none;
   color: #FFF;
 }
 
-footer a {
-  text-decoration: none;
+footer a:hover {
+  color: #FFC107;
+}
+
+footer a:active {
+  color:#212121;
 }
 
 .foot-logo {
@@ -123,7 +132,6 @@ button {
   margin: 1% 2%;
   border: 0px;
   border-radius: 5px;
-  font-size: 2.5em;
 }
 
 /**** ALL FORMS *****/
@@ -165,7 +173,16 @@ input {
 }
 
 #howItWorks {
+  color: #000;
+  font-family: 'Oswald', Helvetica, Arial;
+  font-weight: 400;
   font-size: small;
-  padding: 3%;
-  margin: 1% 2%;
+  text-transform: uppercase;
+  padding: 1% 0 0 1%;
+  margin: 2% 0 0 0;
+  float: right;
 }
+
+/******************************
+  RESPONSIVE
+*****************************/
