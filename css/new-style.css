@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-
 /*************************
 COLOR PALETTE
 http://www.materialpalette.com/blue/amber
@@ -30,7 +27,7 @@ body {
 p {
   color: #212121;
   line-height: 1.4;
-  margin: 1% 2%;
+  margin: 1% 0 2% 0;
   font-size: .9em;
 }
 
@@ -51,29 +48,41 @@ main {
 }
 
 .mainContent {
+  display: flex;
+  flex-flow: column;
+  align-self: baseline;
   background-color: #FFF;
   max-width: 80%;
   border-radius: 5px;
-  padding: 2%;
-  margin: 3%;
+  padding: 3%;
+  margin: 8% 2%;
 }
-
-
 
 header {
   background-color: #2196F3;
-  height: 150px;
+  height: 250px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .siteName {
-  font-family: 'Questrial', Helvetica, Arial;
+  font-family: 'Oswald', Helvetica, Arial;
   font-weight: 400;
-  color: #fff;
+  color: #FFF;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 3.5rem;
-  margin-top: 20px;
+  font-size: 6em;
+  margin: 15px 0 5px 0;
+}
+
+.tagline {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
 }
 
 footer {
@@ -86,8 +95,12 @@ footer {
 
 footer div {
   padding: 10px;
-  margin: 5px;
+  margin: 0px;
   color: #FFF;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .foot-logo {
@@ -110,6 +123,7 @@ button {
   margin: 1% 2%;
   border: 0px;
   border-radius: 5px;
+  font-size: 2.5em;
 }
 
 /**** ALL FORMS *****/
@@ -135,18 +149,7 @@ input {
 
 /******************************
   HOMEPAGE FEATURES
-*******************************/
-
-.tagline {
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.mainContent h2 {
-  margin: 2% 3%;
-}
+*****************************/
 
 
 #remindButton {

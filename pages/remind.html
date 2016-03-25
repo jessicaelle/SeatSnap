@@ -1,0 +1,33 @@
+<h1>Check-In Reminder</h1>
+<h2>Get SMS &amp; Email Alerts</h2>
+<p>{{ message }}</p>
+<form action="https://formspree.io/remind@jessicaelle.com" method="post">
+  <fieldset>
+    <legend>The Essentials</legend>
+    <label for=“firstName”>First Name</label>
+    <input type=“text” id=“firstName” name=“firstName”>
+    <label for=“lastName”>Last Name</label>
+    <input type=“text” id=“lastName” name=“lastName”>
+    <label for=“remindEmail”>Email Address:</label>
+    <input type=“email” id=“remindEmail” name=“remindEmail”>
+    <label for="remindSMS">Mobile Phone:</label>
+    <input type="tel" id="remindSMS" name="remindSMS">
+  </fieldset>
+  <fieldset>
+  <legend>Flight Info</legend>
+  <label for=“airline”>Airline</label>
+  <select id=“airline” name=“airline”>
+    <option value=“southwestAirlines”>Southwest Airlines</option>
+    <option value=“virginAmerica”>Virgin America</option>
+  </select>
+  <label for="departureDate">Departure Date</label>
+  <input type="date" />
+  <label for="flightNumber">Flight #</label>
+  <input type="text" id="flightNumber" name="flightNumber">
+  <label for="confNumber">Confirmation #</label>
+  <input type="text" id="confNumber" name="confNumber">
+  <input type="hidden" name="_subject" value="SeatSnap Remind Submission" />
+  <input type="hidden" name="_next" value="/thanks" />
+  </fieldset>
+  <input type="submit" name="submit" value="Send"></input>
+</form>
