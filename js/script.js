@@ -45,11 +45,11 @@ seatsnAPP.controller('contactController', function($scope) {
     });
 
 seatsnAPP.controller('remindController', function($scope) {
-  $scope.message = 'Get reminded to check-in to your flight one hour before youre able to.';
+  $scope.message = "Just need a little reminder? Fill out the form and we'll ping you one hour before you're able to check-in.";
     });
 
 seatsnAPP.controller('scheduleController', function($scope) {
-  $scope.message = 'Let us take care of your check-in for you. Add your flight info below to ';
+  $scope.message = "Don't want to bother with checking in? We can take care of it for you! Fill out the all the fields below for hassle-free flight check-ins.";
     });
 
 // BUTTON TRIGGERS
